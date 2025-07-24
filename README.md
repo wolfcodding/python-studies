@@ -5,3 +5,5 @@ packaging_monitor_app - code that monitor the process of apple packaging before 
 elevator - application for an elevator that has safety limits regarding the total weight it can lift.
 
 time_interval_class - sample script that implements some custom behaviour for some Python special methods.
+
+2D_vector_model - sample script that implements mathematical vector addition.
