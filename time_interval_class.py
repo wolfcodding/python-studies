@@ -9,23 +9,48 @@
 '''
 
 class MyTimeDelta:
-    def __init__(self, hours, minutes, seconds):
+    def __init__(self, hours = 0, minutes = 0, seconds = 0):
+        
+        self.hours = hours
+        self.minutes = minutes
+        self.seconds = seconds
+        
         try:
-            self.hours = hours
-            self.minutes = minutes
-            self.seconds = seconds
-        except:
+            if not (isinstance(self.hours, int) and isinstance(self.minutes, int) \
+                    and isinstance(self.seconds, int)):
+                raise TypeError 
+
+        except TypeError:
             print("Only intiger type arguments are accepted for object initialization")
+        except:
+            print("Something else went wrong: ")
+    
     
     def __str__(self):
         return "{}:{}:{}".format(self.hours, self.minutes, self.seconds)
 
     def __add__(self,other):
-        return self.hours + other.hours
+        sec_interv_self = self.hours * 3600 + self.minutes * 60 + self.seconds
+        sec_interv_other = other.hours * 3600 + other.minutes * 60 + other.seconds
+
+        add_interv = sec_interv_self + sec_interv_other
+
+        interv_hours = add_interv // 3600
+        interv_minutes = (add_interv % 3600) // 60 
+        interv_seconds = (add_interv % 3600) % 60
+
+        return MyTimeDelta(hours = interv_hours, minutes = interv_minutes, seconds = interv_seconds) 
     
     def __sub__(self,other):
-        return other.hours + self.hours
+        return other.hours - self.hours
     
     def __mul__(self,other):
         return other.hours * int(other)
+    
+
+#Test data
+fti = MyTimeDelta(21, 58, 50)
+sti = MyTimeDelta(1, 45, 22)
+
+print(fti + sti)
     
