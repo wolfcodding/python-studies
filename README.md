@@ -7,3 +7,5 @@ elevator - application for an elevator that has safety limits regarding the tota
 time_interval_class - sample script that implements some custom behaviour for some Python special methods.
 
 2D_vector_model - sample script that implements mathematical vector addition.
+
+MFD_multi_device - emulates a multifunction device (MFD) class consisting of methods responsible for document scanning, printing, and sending via fax
