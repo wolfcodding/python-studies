@@ -9,3 +9,5 @@ time_interval_class - sample script that implements some custom behaviour for so
 2D_vector_model - sample script that implements mathematical vector addition.
 
 multifunction_MFD - emulates a multifunction device (MFD) class consisting of methods responsible for document scanning, printing, and sending via fax
+
+polymorphism_types - a simple script showing polimorphism achieved through inheritance and through duck typing.
