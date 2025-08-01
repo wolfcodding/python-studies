@@ -11,3 +11,5 @@ time_interval_class - sample script that implements some custom behaviour for so
 multifunction_MFD - emulates a multifunction device (MFD) class consisting of methods responsible for document scanning, printing, and sending via fax
 
 polymorphism_types - a simple script showing polimorphism achieved through inheritance and through duck typing.
+
+combiner - arbitrary number of positional argument passing
