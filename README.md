@@ -13,3 +13,5 @@ multifunction_MFD - emulates a multifunction device (MFD) class consisting of me
 polymorphism_types - a simple script showing polimorphism achieved through inheritance and through duck typing.
 
 combiner - arbitrary number of positional argument passing
+
+decorator_example - explaining the process behind decorators
