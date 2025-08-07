@@ -15,3 +15,5 @@ polymorphism_types - a simple script showing polimorphism achieved through inher
 combiner - arbitrary number of positional argument passing
 
 decorator_example - explaining the process behind decorators
+
+packing_machine - program that acts as a packing machine helping us to use different packaging
