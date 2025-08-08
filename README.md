@@ -17,3 +17,5 @@ combiner - arbitrary number of positional argument passing
 decorator_example - explaining the process behind decorators
 
 packing_machine - program that acts as a packing machine helping us to use different packaging
+
+collective_packing_machine - program for packing warehouse prodcucts indivudually and then collectivly
